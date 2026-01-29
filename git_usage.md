@@ -53,6 +53,13 @@ Date:   Mon Sep 22 05:14:33 2025 -0400
     + git help:  这是git最权威的文档，要习惯查看git help。
 + 创建git repository
     + git init: 建立一个git 仓库，这个被github上的创建repository 按钮替代了，在git 客户端（个人电脑）可以不使用。
+    + git clone <远端git repository的地址>，这里可以在git hub的repo的ssh 地址属性中获取.
+    + git remove -v: 现在远端的git repository的地址，也就是本地的git repository从哪里clone而来的：
+      ```
+      qixi@SHPQIXI-N:~/work/xcxrepo/leetcode$ git remote -v
+      origin  git@github.com:XCXJasonHsia/leetcode.git (fetch)
+      origin  git@github.com:XCXJasonHsia/leetcode.git (push)
+      ```
 + 在git客户端设置用户的信息，设置之后，在git上的每次提交，设置的用户信息都会被记录在log里
     + git config --global user.name  "Your Name"
     + git config --global user.email "your.email@example.com"
